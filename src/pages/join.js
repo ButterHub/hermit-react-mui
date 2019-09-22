@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Typography } from '@material-ui/core';
 
-export class signup extends Component {
+export class join extends Component {
     static propTypes = {
 
     }
@@ -16,4 +16,4 @@ export class signup extends Component {
     }
 }
 
-export default signup
+export default join

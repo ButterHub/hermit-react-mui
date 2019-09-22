@@ -5,7 +5,7 @@ import { home } from './pages/home';
 
 import './App.css';
 import { login } from './pages/login';
-import { signup } from './pages/signup';
+import { join } from './pages/join';
 import { Container } from '@material-ui/core';
 import missingPage from './pages/missingPage';
 
@@ -18,7 +18,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={home}></Route>
             <Route exact path="/login" component={login}></Route>
-            <Route exact path="/signup" component={signup}></Route>
+            <Route exact path="/join" component={join}></Route>
             <Route component={missingPage}></Route>
           </Switch>
         </Container>
