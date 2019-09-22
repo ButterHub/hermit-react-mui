@@ -1,5 +1,5 @@
 # hermit-react-mui
-Frontend (react &amp; material-ui) app for hermit, a decision making tool.
+Frontend (react &amp; material-ui) app for hermit, a decision making tool. Have a look at the current [progress](https://bens.fun).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

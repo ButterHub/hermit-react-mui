@@ -2,10 +2,9 @@ import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Home } from './pages/Home';
-
+import { Login } from './pages/Login';
+import { Join } from './pages/Join';
 import './App.css';
-import { login } from './pages/login';
-import { join } from './pages/join';
 import { Container, createMuiTheme, CssBaseline } from '@material-ui/core';
 import missingPage from './pages/missingPage';
 import { ThemeProvider } from '@material-ui/styles';
@@ -19,8 +18,8 @@ function App() {
         <Container maxWidth="md">
           <Switch>
             <Route exact path="/" component={Home}></Route>
-            <Route exact path="/login" component={login}></Route>
-            <Route exact path="/join" component={join}></Route>
+            <Route exact path="/login" component={Login}></Route>
+            <Route exact path="/join" component={Join}></Route>
             <Route component={missingPage}></Route>
           </Switch>
         </Container>

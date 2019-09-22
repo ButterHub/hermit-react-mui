@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Typography } from '@material-ui/core';
 
-export class login extends Component {
+export class Login extends Component {
     static propTypes = {
 
     }
@@ -16,4 +16,4 @@ export class login extends Component {
     }
 }
 
-export default login
+export default Login
