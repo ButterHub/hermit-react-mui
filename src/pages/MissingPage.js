@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography } from '@material-ui/core';
 
-export default function missingPage() {
+export default function MissingPage() {
     return (
         <React.Fragment>
             <Typography color="secondary" variant="h3">Page not found.</Typography>
