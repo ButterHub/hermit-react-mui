@@ -10,7 +10,8 @@ export class join extends Component {
     render() {
         return (
             <div>
-                <Typography variant="h6">Sign Up</Typography>
+                <Typography color="secondary" variant="h1">Join</Typography>
+                <Typography color="primary" variant="h6">This app isn't ready yet.</Typography>
             </div>
         )
     }

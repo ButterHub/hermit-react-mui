@@ -1,14 +1,24 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography, Link, Button, makeStyles } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Link, Button, makeStyles, MuiThemeProvider } from '@material-ui/core';
+import FaviconSvgImage from '../../img/favicon.svg'
 
-const Navbar = () => {
+const NavbarContent = () => {
     const classes = useStyles()
     const auth = false
     return (
         <div className={classes.root}>
-            <AppBar>
+            <AppBar elevation={0}>
                 <Toolbar>
-                    <Typography className={classes.title}>
+                    <Link href="/">
+                    <img src={FaviconSvgImage} alt="Logo" style={
+                        {
+                            "color": "white",
+                            "width": "40px",
+                            "padding-right": "15px"
+                    }
+                        }></img>
+                    </Link>
+                    <Typography href="/" className={classes.title}>
                         Hermit
                     </Typography>
                     {auth && (
@@ -22,7 +32,7 @@ const Navbar = () => {
                     )}
                     {!auth && (
                         <React.Fragment>
-                            <Button color="inherit">Explore</Button>
+                            <Button href="/public" color="inherit">Explore</Button>
                             <Button href="/join" color="inherit">Join</Button>
                         </React.Fragment>
                     )}
@@ -41,4 +51,4 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-export default Navbar
+export default NavbarContent
