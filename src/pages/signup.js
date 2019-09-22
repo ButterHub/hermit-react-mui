@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { Typography } from '@material-ui/core';
 
 export class signup extends Component {
     static propTypes = {
@@ -9,7 +10,7 @@ export class signup extends Component {
     render() {
         return (
             <div>
-                <h1>Sign Up</h1>
+                <Typography variant="h6">Sign Up</Typography>
             </div>
         )
     }

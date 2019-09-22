@@ -7,6 +7,7 @@ import './App.css';
 import { login } from './pages/login';
 import { signup } from './pages/signup';
 import { Container } from '@material-ui/core';
+import missingPage from './pages/missingPage';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Container maxWidth="md">
           <Switch>
             <Route exact path="/" component={home}></Route>
-            <Route path="/login" component={login}></Route>
-            <Route path="/signup" component={signup}></Route>
+            <Route exact path="/login" component={login}></Route>
+            <Route exact path="/signup" component={signup}></Route>
+            <Route component={missingPage}></Route>
           </Switch>
         </Container>
       </BrowserRouter>

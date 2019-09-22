@@ -2,3 +2,4 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://hermit.netlify.com/* https://hermit.butterworth.pro/:splat 301!
+/* /index.html 200
